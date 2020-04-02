@@ -28,3 +28,4 @@ for method in android_view_methods:
     print(method)
 
 session.detach()
+
