@@ -2,7 +2,7 @@
 
 ![](preview.png)
 
-android method filter for HACKERS!!!!
+android method filter for static analysis.
 
 ## Dependencies
 
