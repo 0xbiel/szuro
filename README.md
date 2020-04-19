@@ -7,6 +7,7 @@ android method filter for static analysis.
 ## Dependencies
 
 - frida-tools
+- adb
 
 ## Usage
 
