@@ -1,16 +1,24 @@
-import frida
+#!/usr/bin/env python3
 
-print("""
+import frida
+import sys
+
+logo = print("""
 ____ ___  _  _ ____ ____ 
 [__    /  |  | |__/ |  | 
 ___]  /__ |__| |  \ |__| 
-                                 
+
+                    ~0xbiel
 """)
 
-appid = input("Package ID: ")
+if sys.argv[1] == 'help' or sys.argv[1] == '-h' or sys.argv[1] == '--help': 
+    logo
+    print("Usage: szuro [package id] [what you want to filter].\n")
 
-mf = input("What do you want to filter? ")
 
+appid = sys.argv[1]
+mf = sys.argv[2]
+    
 print("\n")
 
 session = frida.get_usb_device().attach(appid)
